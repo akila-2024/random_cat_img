@@ -44,10 +44,14 @@ function App() {
     <div className="App">
       <h1>Random Cat Image</h1>
       <hr />
+      <div className='img_container'>
+
+  
       {loading ? <p>Loading...</p>:
 
       <img src={image} alt="Random Cat Image" style={{width:'300px', height: 'auto'}} />
       }
+          </div>
       <br />
 
       <button onClick={fetchCatImage}>Get New Random Image</button>
